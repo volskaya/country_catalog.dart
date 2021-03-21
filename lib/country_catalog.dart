@@ -1,4 +1,4 @@
 library country_catalog;
 
 export 'src/country_catalog.dart';
-export 'src/country_catalog_localizations.dart';
+export 'src/l10n/country_catalog_localizations.dart';

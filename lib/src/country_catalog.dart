@@ -1,4 +1,4 @@
-import 'package:country_catalog/src/country_catalog_localizations.dart';
+import 'package:country_catalog/src/l10n/country_catalog_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -22,7 +22,8 @@ abstract class Country implements _$Country {
       AssetImage('flags/${country.alphaCode2.toLowerCase()}.png', package: package);
 
   static String localize(BuildContext context, Country country) =>
-      CountryCatalogLocalizations.of(context)['countryName_${country.alphaCode2.toLowerCase()}'];
+      CountryCatalogLocalizations.of(context).getString('${country.alphaCode2.toLowerCase()}CountryName') ??
+      country.name;
 }
 
 class CountryConverter implements JsonConverter<Country, String> {
