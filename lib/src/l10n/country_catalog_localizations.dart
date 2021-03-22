@@ -66,7 +66,7 @@ abstract class CountryCatalogLocalizations {
   // ignore: unused_field
   final String localeName;
 
-  static CountryCatalogLocalizations of(BuildContext context) {
+  static CountryCatalogLocalizations? of(BuildContext context) {
     return Localizations.of<CountryCatalogLocalizations>(context, CountryCatalogLocalizations);
   }
 
@@ -1592,9 +1592,9 @@ abstract class CountryCatalogLocalizations {
   /// **'Kosov'**
   String get xkCountryName;
 
-  String operator [](String key) => getString(key);
+  String? operator [](String key) => getString(key);
 
-  String getString(String key) {
+  String? getString(String key) {
     switch (key) {
       case 'afCountryName':
         return afCountryName;
@@ -2097,7 +2097,7 @@ abstract class CountryCatalogLocalizations {
       case 'xkCountryName':
         return xkCountryName;
     }
-    throw UnimplementedError();
+    return null;
   }
 }
 

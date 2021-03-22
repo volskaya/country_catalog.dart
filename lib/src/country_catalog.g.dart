@@ -14,7 +14,7 @@ _$_Country _$_$_CountryFromJson(Map json) {
     name: json['name'] as String,
     nationality: json['nationality'] as String,
     code: json['code'] as String,
-    stripe: json['stripe'] as bool ?? false,
+    stripe: json['stripe'] as bool? ?? false,
   );
 }
 
