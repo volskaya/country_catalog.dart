@@ -18,7 +18,7 @@ class Country with _$Country {
   }) = _Country;
 
   factory Country.fromJson(Map<String, dynamic> json) => _$CountryFromJson(json);
-  static AssetImage imageOf(Country country, {String? package}) =>
+  static AssetImage imageOf(Country country, {String package = 'country_catalog'}) =>
       AssetImage('flags/${country.alphaCode2.toLowerCase()}.png', package: package);
 
   static String localize(BuildContext context, Country country) =>
