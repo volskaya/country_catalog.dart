@@ -32,7 +32,7 @@ part 'currency_catalog.g.dart';
     return currencySymbol;
   }
 
-  @override String toString() => symbol != null ? '$code ($symbol)' : code;
+  String toCodeWithSymbol() => symbol != null ? '${code.toUpperCase()} ($symbol)' : code.toUpperCase();
 }
 
 abstract class CurrencyCatalog {
