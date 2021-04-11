@@ -26,6 +26,8 @@ class Country with _$Country {
       country.name;
 }
 
+class CountryC = CountryConverter with JsonConverter<Country?, String?>;
+
 class CountryConverter implements JsonConverter<Country?, String?> {
   const CountryConverter();
 
