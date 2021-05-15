@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'country_catalog.dart';
 
@@ -8,6 +8,10 @@ part of 'country_catalog.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Country _$CountryFromJson(Map<String, dynamic> json) {
   return _Country.fromJson(json);
 }
@@ -16,14 +20,13 @@ Country _$CountryFromJson(Map<String, dynamic> json) {
 class _$CountryTearOff {
   const _$CountryTearOff();
 
-// ignore: unused_element
   _Country call(
-      {@required @JsonKey() String numCode,
-      @required @JsonKey() String alphaCode2,
-      @required @JsonKey() String alphaCode3,
-      @required @JsonKey() String name,
-      @required @JsonKey() String nationality,
-      @required @JsonKey() String code,
+      {@JsonKey() required String numCode,
+      @JsonKey() required String alphaCode2,
+      @JsonKey() required String alphaCode3,
+      @JsonKey() required String name,
+      @JsonKey() required String nationality,
+      @JsonKey() required String code,
       @JsonKey(defaultValue: false) bool stripe = false}) {
     return _Country(
       numCode: numCode,
@@ -36,35 +39,34 @@ class _$CountryTearOff {
     );
   }
 
-// ignore: unused_element
   Country fromJson(Map<String, Object> json) {
     return Country.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Country = _$CountryTearOff();
 
 /// @nodoc
 mixin _$Country {
   @JsonKey()
-  String get numCode;
+  String get numCode => throw _privateConstructorUsedError;
   @JsonKey()
-  String get alphaCode2;
+  String get alphaCode2 => throw _privateConstructorUsedError;
   @JsonKey()
-  String get alphaCode3;
+  String get alphaCode3 => throw _privateConstructorUsedError;
   @JsonKey()
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @JsonKey()
-  String get nationality;
+  String get nationality => throw _privateConstructorUsedError;
   @JsonKey()
-  String get code;
+  String get code => throw _privateConstructorUsedError;
   @JsonKey(defaultValue: false)
-  bool get stripe;
+  bool get stripe => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $CountryCopyWith<Country> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $CountryCopyWith<Country> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -91,25 +93,43 @@ class _$CountryCopyWithImpl<$Res> implements $CountryCopyWith<$Res> {
 
   @override
   $Res call({
-    Object numCode = freezed,
-    Object alphaCode2 = freezed,
-    Object alphaCode3 = freezed,
-    Object name = freezed,
-    Object nationality = freezed,
-    Object code = freezed,
-    Object stripe = freezed,
+    Object? numCode = freezed,
+    Object? alphaCode2 = freezed,
+    Object? alphaCode3 = freezed,
+    Object? name = freezed,
+    Object? nationality = freezed,
+    Object? code = freezed,
+    Object? stripe = freezed,
   }) {
     return _then(_value.copyWith(
-      numCode: numCode == freezed ? _value.numCode : numCode as String,
-      alphaCode2:
-          alphaCode2 == freezed ? _value.alphaCode2 : alphaCode2 as String,
-      alphaCode3:
-          alphaCode3 == freezed ? _value.alphaCode3 : alphaCode3 as String,
-      name: name == freezed ? _value.name : name as String,
-      nationality:
-          nationality == freezed ? _value.nationality : nationality as String,
-      code: code == freezed ? _value.code : code as String,
-      stripe: stripe == freezed ? _value.stripe : stripe as bool,
+      numCode: numCode == freezed
+          ? _value.numCode
+          : numCode // ignore: cast_nullable_to_non_nullable
+              as String,
+      alphaCode2: alphaCode2 == freezed
+          ? _value.alphaCode2
+          : alphaCode2 // ignore: cast_nullable_to_non_nullable
+              as String,
+      alphaCode3: alphaCode3 == freezed
+          ? _value.alphaCode3
+          : alphaCode3 // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      nationality: nationality == freezed
+          ? _value.nationality
+          : nationality // ignore: cast_nullable_to_non_nullable
+              as String,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String,
+      stripe: stripe == freezed
+          ? _value.stripe
+          : stripe // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -140,25 +160,43 @@ class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object numCode = freezed,
-    Object alphaCode2 = freezed,
-    Object alphaCode3 = freezed,
-    Object name = freezed,
-    Object nationality = freezed,
-    Object code = freezed,
-    Object stripe = freezed,
+    Object? numCode = freezed,
+    Object? alphaCode2 = freezed,
+    Object? alphaCode3 = freezed,
+    Object? name = freezed,
+    Object? nationality = freezed,
+    Object? code = freezed,
+    Object? stripe = freezed,
   }) {
     return _then(_Country(
-      numCode: numCode == freezed ? _value.numCode : numCode as String,
-      alphaCode2:
-          alphaCode2 == freezed ? _value.alphaCode2 : alphaCode2 as String,
-      alphaCode3:
-          alphaCode3 == freezed ? _value.alphaCode3 : alphaCode3 as String,
-      name: name == freezed ? _value.name : name as String,
-      nationality:
-          nationality == freezed ? _value.nationality : nationality as String,
-      code: code == freezed ? _value.code : code as String,
-      stripe: stripe == freezed ? _value.stripe : stripe as bool,
+      numCode: numCode == freezed
+          ? _value.numCode
+          : numCode // ignore: cast_nullable_to_non_nullable
+              as String,
+      alphaCode2: alphaCode2 == freezed
+          ? _value.alphaCode2
+          : alphaCode2 // ignore: cast_nullable_to_non_nullable
+              as String,
+      alphaCode3: alphaCode3 == freezed
+          ? _value.alphaCode3
+          : alphaCode3 // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      nationality: nationality == freezed
+          ? _value.nationality
+          : nationality // ignore: cast_nullable_to_non_nullable
+              as String,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String,
+      stripe: stripe == freezed
+          ? _value.stripe
+          : stripe // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -168,20 +206,13 @@ class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res>
 /// @nodoc
 class _$_Country implements _Country {
   const _$_Country(
-      {@required @JsonKey() this.numCode,
-      @required @JsonKey() this.alphaCode2,
-      @required @JsonKey() this.alphaCode3,
-      @required @JsonKey() this.name,
-      @required @JsonKey() this.nationality,
-      @required @JsonKey() this.code,
-      @JsonKey(defaultValue: false) this.stripe = false})
-      : assert(numCode != null),
-        assert(alphaCode2 != null),
-        assert(alphaCode3 != null),
-        assert(name != null),
-        assert(nationality != null),
-        assert(code != null),
-        assert(stripe != null);
+      {@JsonKey() required this.numCode,
+      @JsonKey() required this.alphaCode2,
+      @JsonKey() required this.alphaCode3,
+      @JsonKey() required this.name,
+      @JsonKey() required this.nationality,
+      @JsonKey() required this.code,
+      @JsonKey(defaultValue: false) this.stripe = false});
 
   factory _$_Country.fromJson(Map<String, dynamic> json) =>
       _$_$_CountryFromJson(json);
@@ -248,6 +279,7 @@ class _$_Country implements _Country {
       const DeepCollectionEquality().hash(code) ^
       const DeepCollectionEquality().hash(stripe);
 
+  @JsonKey(ignore: true)
   @override
   _$CountryCopyWith<_Country> get copyWith =>
       __$CountryCopyWithImpl<_Country>(this, _$identity);
@@ -260,37 +292,39 @@ class _$_Country implements _Country {
 
 abstract class _Country implements Country {
   const factory _Country(
-      {@required @JsonKey() String numCode,
-      @required @JsonKey() String alphaCode2,
-      @required @JsonKey() String alphaCode3,
-      @required @JsonKey() String name,
-      @required @JsonKey() String nationality,
-      @required @JsonKey() String code,
+      {@JsonKey() required String numCode,
+      @JsonKey() required String alphaCode2,
+      @JsonKey() required String alphaCode3,
+      @JsonKey() required String name,
+      @JsonKey() required String nationality,
+      @JsonKey() required String code,
       @JsonKey(defaultValue: false) bool stripe}) = _$_Country;
 
   factory _Country.fromJson(Map<String, dynamic> json) = _$_Country.fromJson;
 
   @override
   @JsonKey()
-  String get numCode;
+  String get numCode => throw _privateConstructorUsedError;
   @override
   @JsonKey()
-  String get alphaCode2;
+  String get alphaCode2 => throw _privateConstructorUsedError;
   @override
   @JsonKey()
-  String get alphaCode3;
+  String get alphaCode3 => throw _privateConstructorUsedError;
   @override
   @JsonKey()
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
   @JsonKey()
-  String get nationality;
+  String get nationality => throw _privateConstructorUsedError;
   @override
   @JsonKey()
-  String get code;
+  String get code => throw _privateConstructorUsedError;
   @override
   @JsonKey(defaultValue: false)
-  bool get stripe;
+  bool get stripe => throw _privateConstructorUsedError;
   @override
-  _$CountryCopyWith<_Country> get copyWith;
+  @JsonKey(ignore: true)
+  _$CountryCopyWith<_Country> get copyWith =>
+      throw _privateConstructorUsedError;
 }
