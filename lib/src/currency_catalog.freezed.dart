@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'currency_catalog.dart';
 
@@ -40,7 +40,8 @@ const $Currency = _$CurrencyTearOff();
 /// @nodoc
 mixin _$Currency {
   @JsonKey()
-  String get countryCode => throw _privateConstructorUsedError;
+  String get countryCode =>
+      throw _privateConstructorUsedError; // Expects alpha code 2.
   @JsonKey()
   String get code => throw _privateConstructorUsedError;
 
@@ -118,21 +119,20 @@ class __$CurrencyCopyWithImpl<$Res> extends _$CurrencyCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Currency extends _Currency {
   _$_Currency(
       {@JsonKey() required this.countryCode, @JsonKey() required this.code})
       : super._();
 
   factory _$_Currency.fromJson(Map<String, dynamic> json) =>
-      _$_$_CurrencyFromJson(json);
+      _$$_CurrencyFromJson(json);
 
   @override
   @JsonKey()
   final String countryCode;
-  @override
+  @override // Expects alpha code 2.
   @JsonKey()
   final String code;
 
@@ -165,7 +165,7 @@ class _$_Currency extends _Currency {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CurrencyToJson(this);
+    return _$$_CurrencyToJson(this);
   }
 }
 
@@ -180,7 +180,7 @@ abstract class _Currency extends Currency {
   @override
   @JsonKey()
   String get countryCode => throw _privateConstructorUsedError;
-  @override
+  @override // Expects alpha code 2.
   @JsonKey()
   String get code => throw _privateConstructorUsedError;
   @override

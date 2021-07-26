@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'country_catalog.dart';
 
@@ -27,7 +27,7 @@ class _$CountryTearOff {
       @JsonKey() required String name,
       @JsonKey() required String nationality,
       @JsonKey() required String code,
-      @JsonKey(defaultValue: false) bool stripe = false}) {
+      @JsonKey() bool stripe = false}) {
     return _Country(
       numCode: numCode,
       alphaCode2: alphaCode2,
@@ -61,7 +61,7 @@ mixin _$Country {
   String get nationality => throw _privateConstructorUsedError;
   @JsonKey()
   String get code => throw _privateConstructorUsedError;
-  @JsonKey(defaultValue: false)
+  @JsonKey()
   bool get stripe => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -80,7 +80,7 @@ abstract class $CountryCopyWith<$Res> {
       @JsonKey() String name,
       @JsonKey() String nationality,
       @JsonKey() String code,
-      @JsonKey(defaultValue: false) bool stripe});
+      @JsonKey() bool stripe});
 }
 
 /// @nodoc
@@ -146,7 +146,7 @@ abstract class _$CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
       @JsonKey() String name,
       @JsonKey() String nationality,
       @JsonKey() String code,
-      @JsonKey(defaultValue: false) bool stripe});
+      @JsonKey() bool stripe});
 }
 
 /// @nodoc
@@ -201,9 +201,8 @@ class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Country implements _Country {
   const _$_Country(
       {@JsonKey() required this.numCode,
@@ -212,10 +211,10 @@ class _$_Country implements _Country {
       @JsonKey() required this.name,
       @JsonKey() required this.nationality,
       @JsonKey() required this.code,
-      @JsonKey(defaultValue: false) this.stripe = false});
+      @JsonKey() this.stripe = false});
 
   factory _$_Country.fromJson(Map<String, dynamic> json) =>
-      _$_$_CountryFromJson(json);
+      _$$_CountryFromJson(json);
 
   @override
   @JsonKey()
@@ -236,7 +235,7 @@ class _$_Country implements _Country {
   @JsonKey()
   final String code;
   @override
-  @JsonKey(defaultValue: false)
+  @JsonKey()
   final bool stripe;
 
   @override
@@ -286,7 +285,7 @@ class _$_Country implements _Country {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CountryToJson(this);
+    return _$$_CountryToJson(this);
   }
 }
 
@@ -298,7 +297,7 @@ abstract class _Country implements Country {
       @JsonKey() required String name,
       @JsonKey() required String nationality,
       @JsonKey() required String code,
-      @JsonKey(defaultValue: false) bool stripe}) = _$_Country;
+      @JsonKey() bool stripe}) = _$_Country;
 
   factory _Country.fromJson(Map<String, dynamic> json) = _$_Country.fromJson;
 
@@ -321,7 +320,7 @@ abstract class _Country implements Country {
   @JsonKey()
   String get code => throw _privateConstructorUsedError;
   @override
-  @JsonKey(defaultValue: false)
+  @JsonKey()
   bool get stripe => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)

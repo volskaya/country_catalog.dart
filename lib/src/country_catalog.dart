@@ -14,7 +14,7 @@ class Country with _$Country {
     @JsonKey() required String name,
     @JsonKey() required String nationality,
     @JsonKey() required String code,
-    @Default(false) @JsonKey(defaultValue: false) bool stripe,
+    @JsonKey() @Default(false) bool stripe,
   }) = _Country;
 
   factory Country.fromJson(Map<String, dynamic> json) => _$CountryFromJson(json);
@@ -26,10 +26,8 @@ class Country with _$Country {
       country.name;
 }
 
-class CountryC = CountryConverter with JsonConverter<Country?, String?>;
-
-class CountryConverter implements JsonConverter<Country?, String?> {
-  const CountryConverter();
+class CountryC implements JsonConverter<Country?, String?> {
+  const CountryC();
 
   @override
   Country? fromJson(String? json) => json != null ? CountryCatalog.fromAlphaCode(json) : null;
