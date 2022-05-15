@@ -10,7 +10,8 @@ import 'package:intl/number_symbols_data.dart';
 part 'currency_catalog.freezed.dart';
 part 'currency_catalog.g.dart';
 
-@freezed class Currency with _$Currency {
+@freezed
+class Currency with _$Currency {
   factory Currency({
     @JsonKey() required String countryCode, // Expects alpha code 2.
     @JsonKey() required String code,
@@ -21,8 +22,8 @@ part 'currency_catalog.g.dart';
 
   static final _numberFormatter = NumberFormat();
 
-  late String? symbol = getCurrencySymbol(code);
-  late Country? country = CountryCatalog.fromAlphaCode(countryCode);
+  late final String? symbol = getCurrencySymbol(code);
+  late final Country? country = CountryCatalog.fromAlphaCode(countryCode);
 
   static String? getCurrencySymbol(String currencyCode) {
     String? currencySymbol;

@@ -1,4 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'country_catalog.dart';
@@ -10,42 +12,11 @@ part of 'country_catalog.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Country _$CountryFromJson(Map<String, dynamic> json) {
   return _Country.fromJson(json);
 }
-
-/// @nodoc
-class _$CountryTearOff {
-  const _$CountryTearOff();
-
-  _Country call(
-      {@JsonKey() required String numCode,
-      @JsonKey() required String alphaCode2,
-      @JsonKey() required String alphaCode3,
-      @JsonKey() required String name,
-      @JsonKey() required String nationality,
-      @JsonKey() required String code,
-      @JsonKey() bool stripe = false}) {
-    return _Country(
-      numCode: numCode,
-      alphaCode2: alphaCode2,
-      alphaCode3: alphaCode3,
-      name: name,
-      nationality: nationality,
-      code: code,
-      stripe: stripe,
-    );
-  }
-
-  Country fromJson(Map<String, Object> json) {
-    return Country.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Country = _$CountryTearOff();
 
 /// @nodoc
 mixin _$Country {
@@ -135,9 +106,10 @@ class _$CountryCopyWithImpl<$Res> implements $CountryCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
-  factory _$CountryCopyWith(_Country value, $Res Function(_Country) then) =
-      __$CountryCopyWithImpl<$Res>;
+abstract class _$$_CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
+  factory _$$_CountryCopyWith(
+          _$_Country value, $Res Function(_$_Country) then) =
+      __$$_CountryCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey() String numCode,
@@ -150,13 +122,13 @@ abstract class _$CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res>
-    implements _$CountryCopyWith<$Res> {
-  __$CountryCopyWithImpl(_Country _value, $Res Function(_Country) _then)
-      : super(_value, (v) => _then(v as _Country));
+class __$$_CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res>
+    implements _$$_CountryCopyWith<$Res> {
+  __$$_CountryCopyWithImpl(_$_Country _value, $Res Function(_$_Country) _then)
+      : super(_value, (v) => _then(v as _$_Country));
 
   @override
-  _Country get _value => super._value as _Country;
+  _$_Country get _value => super._value as _$_Country;
 
   @override
   $Res call({
@@ -168,7 +140,7 @@ class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res>
     Object? code = freezed,
     Object? stripe = freezed,
   }) {
-    return _then(_Country(
+    return _then(_$_Country(
       numCode: numCode == freezed
           ? _value.numCode
           : numCode // ignore: cast_nullable_to_non_nullable
@@ -246,42 +218,36 @@ class _$_Country implements _Country {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Country &&
-            (identical(other.numCode, numCode) ||
-                const DeepCollectionEquality()
-                    .equals(other.numCode, numCode)) &&
-            (identical(other.alphaCode2, alphaCode2) ||
-                const DeepCollectionEquality()
-                    .equals(other.alphaCode2, alphaCode2)) &&
-            (identical(other.alphaCode3, alphaCode3) ||
-                const DeepCollectionEquality()
-                    .equals(other.alphaCode3, alphaCode3)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.nationality, nationality) ||
-                const DeepCollectionEquality()
-                    .equals(other.nationality, nationality)) &&
-            (identical(other.code, code) ||
-                const DeepCollectionEquality().equals(other.code, code)) &&
-            (identical(other.stripe, stripe) ||
-                const DeepCollectionEquality().equals(other.stripe, stripe)));
+        (other.runtimeType == runtimeType &&
+            other is _$_Country &&
+            const DeepCollectionEquality().equals(other.numCode, numCode) &&
+            const DeepCollectionEquality()
+                .equals(other.alphaCode2, alphaCode2) &&
+            const DeepCollectionEquality()
+                .equals(other.alphaCode3, alphaCode3) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.nationality, nationality) &&
+            const DeepCollectionEquality().equals(other.code, code) &&
+            const DeepCollectionEquality().equals(other.stripe, stripe));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(numCode) ^
-      const DeepCollectionEquality().hash(alphaCode2) ^
-      const DeepCollectionEquality().hash(alphaCode3) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(nationality) ^
-      const DeepCollectionEquality().hash(code) ^
-      const DeepCollectionEquality().hash(stripe);
 
   @JsonKey(ignore: true)
   @override
-  _$CountryCopyWith<_Country> get copyWith =>
-      __$CountryCopyWithImpl<_Country>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(numCode),
+      const DeepCollectionEquality().hash(alphaCode2),
+      const DeepCollectionEquality().hash(alphaCode3),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(nationality),
+      const DeepCollectionEquality().hash(code),
+      const DeepCollectionEquality().hash(stripe));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_CountryCopyWith<_$_Country> get copyWith =>
+      __$$_CountryCopyWithImpl<_$_Country>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -291,13 +257,13 @@ class _$_Country implements _Country {
 
 abstract class _Country implements Country {
   const factory _Country(
-      {@JsonKey() required String numCode,
-      @JsonKey() required String alphaCode2,
-      @JsonKey() required String alphaCode3,
-      @JsonKey() required String name,
-      @JsonKey() required String nationality,
-      @JsonKey() required String code,
-      @JsonKey() bool stripe}) = _$_Country;
+      {@JsonKey() required final String numCode,
+      @JsonKey() required final String alphaCode2,
+      @JsonKey() required final String alphaCode3,
+      @JsonKey() required final String name,
+      @JsonKey() required final String nationality,
+      @JsonKey() required final String code,
+      @JsonKey() final bool stripe}) = _$_Country;
 
   factory _Country.fromJson(Map<String, dynamic> json) = _$_Country.fromJson;
 
@@ -324,6 +290,6 @@ abstract class _Country implements Country {
   bool get stripe => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$CountryCopyWith<_Country> get copyWith =>
+  _$$_CountryCopyWith<_$_Country> get copyWith =>
       throw _privateConstructorUsedError;
 }
